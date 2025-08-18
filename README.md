@@ -1,5 +1,7 @@
 # consportdaysite
 
+To analyse data from a strava club 
+
 The idea is to have a test browser : 
 1. Open Strava.com
 2. Login manually
