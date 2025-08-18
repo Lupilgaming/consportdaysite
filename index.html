@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activity Leaderboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body class="light-theme">
+  <header>
+    <h1>🏆 Activity Leaderboard</h1>
+    <select id="theme-selector">
+      <option value="light">Light Theme</option>
+      <option value="dark">Dark Theme</option>
+    </select>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Filters</h2>
+      <label>Date Range:</label>
+      <input type="date" id="start-date" />
+      <input type="date" id="end-date" />
+
+      <label>Activity Type:</label>
+      <select id="activity-type-filter">
+        <option value="all">All</option>
+      </select>
+    </aside>
+
+    <main>
+      <section id="leaderboard">
+        <h2>Leaderboard</h2>
+        <table>
+          <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Athlete</th>
+                  <th>Points</th>
+                </tr>              
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section id="charts">
+        <h2>Average Points per Activity</h2>
+        <div id="avg-points-chart"></div>
+
+        <h2>Total Points per Activity</h2>
+        <div id="total-points-chart"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

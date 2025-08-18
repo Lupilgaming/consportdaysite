@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  header {
+    background: #0077cc;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  aside {
+    width: 250px;
+    padding: 1em;
+    background: #f4f4f4;
+  }
+  
+  main {
+    flex: 1;
+    padding: 1em;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+  }
+  
+  #avg-points-chart, #total-points-chart {
+    margin-top: 1em;
+  }
+  
+  .light-theme {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .dark-theme {
+    background: #1e1e1e;
+    color: #ffffff;
+  }
+  
+  .dark-theme aside {
+    background: #2e2e2e;
+  }
+  
+  .dark-theme table, .dark-theme th, .dark-theme td {
+    border-color: #555;
+  }
+  
