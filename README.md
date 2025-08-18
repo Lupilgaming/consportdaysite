@@ -15,7 +15,7 @@ The idea is to have a test browser :
 
 For how tos on running selenium read docs -- https://selenium-python.readthedocs.io/ or https://www.selenium.dev/documentation/
 
-If you cant read them all just do 3 things (**TLDR**) :
+If you cant read them all just do 3 things (**TLDR**) : (and use the check_selenium.py it will launch a browser window then close it asap dont worry the code only closes it)
 1. Download a separate test browser ( better practice as far as i am concerned )
 2. Download corresponding driver
 3. pip install selenium and boom ready to go ( now i think selenium package downloads and locally caches driver so step 2 might be optional )
